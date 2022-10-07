@@ -10,7 +10,7 @@ import Register from './components/Register/Register';
 import UserPerfil from './components/UserPerfil/UserPerfil';
 import Purchases from './components/purchases/Purchases.jsx';
 import { useState } from 'react';
-import AsideCard from './components/AsideCard/AsideCard';
+import AsideCard from './components/asideCard/AsideCard';
 
 function App() {
 
