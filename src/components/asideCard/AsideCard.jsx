@@ -14,7 +14,7 @@ function AsideCard({ isVisibility, update }) {
 
     useEffect(() => {
         dispatch(getProductCar());
-    }, [update])
+    }, [])
     const freshProduct = () => {
         dispatch(getProductCar());
     }
@@ -33,32 +33,42 @@ function AsideCard({ isVisibility, update }) {
             "city": "USA",
             "references": "Some references"
         }
-        axios.post('https://ecommerce-api-react.herokuapp.com/api/v1/purchases',body, getConfig())
+        axios.post('https://ecommerce-api-react.herokuapp.com/api/v1/purchases',productCars, getConfig())
         .then(results => {
             console.log(results);
             dispatch(getProductCar());
         })
         .catch(err => console.log(err))
+        .finally(() => {
+
+        })
     };
     console.log(productCars);
 
     return (
         <div className='asideCard-component' style={ isVisibility ? { visibility: 'visible' }: { visibility: 'hidden' } } key='hola'> 
-            <h3 className='asideCard-title'>shopping cart</h3>
-            <div className='asideCart-ProductContain' >
+            <h3 className='asideCard-title' key={'sdacadc'}>shopping cart</h3>
+            <div className='asideCart-ProductContain'key={'sdacsdsadc'} >
                 {
-                    productCars.map(target => (
-                        <article className='asideCart-product' key={target.key}>
-                            <p className='asideCart-brand' >{target.brand}</p>
-                        <h4 className='asideCart-title' >{target.title}</h4>
-                        <div className='asideCart-cuantityContain'>
-                                <p className='asideCart-cuantity'>{target.productsInCart.quantity}</p>
-                        </div>
-                        <button className='boxContainer_form-btn asideCart-btnDelect' onClick={() => deleteProduct(target.id)}>
-                                <img className='asideCart-btnImg' src={ deleteImg } alt="" />
-                        </button>
-                        </article>
-                    ))
+                    productCars ? (
+                        productCars.map(target => (
+                            <article className='asideCart-product' key={target.key}>
+                                <p className='asideCart-brand' >{target.brand}</p>
+                            <h4 className='asideCart-title' >{target.title}</h4>
+                            <div className='asideCart-cuantityContain'>
+                                    <p className='asideCart-cuantity'>{target.productsInCart.quantity}</p>
+                            </div>
+                            <button className='boxContainer_form-btn asideCart-btnDelect' onClick={() => deleteProduct(target.id)}>
+                                    <img className='asideCart-btnImg' src={ deleteImg } alt="" />
+                            </button>
+                            </article>
+                        ))
+                    )
+                    :
+                    (
+                        ''
+                    )
+                   
                 }
             </div>
             <button className='boxContainer_form-btn asideCart-btnBuy' onClick={ cardPurchases } >CheckOut</button>

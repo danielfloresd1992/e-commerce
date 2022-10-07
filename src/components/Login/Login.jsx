@@ -42,10 +42,10 @@ function Login() {
                 <div className='login-formContains'>
                     <form className='login-form' onSubmit={ handleSubmit(getUser) }>
                         <label className='login-label' htmlFor="user">Username</label>
-                        <input type="text" name="" id="user" className="login-input" {...register("email")} value="pedrocamo92@hotmail.com"/>
+                        <input type="text" name="" id="user" className="login-input" {...register("email")} placeholder="exaple@xxx.com" />
                         <label className='login-label' htmlFor="password">Password</label>
                         <div className='login-div-password'>
-                            <input type={ isVisivility ? "text" : "password" } name="" id="password" className="login-input input2" {...register("password")} value="trtrttwruy"/>
+                            <input type={ isVisivility ? "text" : "password" } name="" id="password" className="login-input input2" {...register("password")} />
                             <button type="text" className='login-div-password-button' onClick={ () => setVisivility(!isVisivility) } >
                                 <img className="login-div-password-img" src={ isVisivility ? vilivilityOf : visivility } alt="" />
                             </button> 
