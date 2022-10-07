@@ -1,0 +1,71 @@
+.purchases-component{
+    width: 100%;
+    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.purchases-goHomeContain{
+    width: 90%;
+}
+.purchases-goHome{
+    text-decoration: none;
+    color: #ff5050;
+    font-weight: bold;
+}
+.purchases-titleContain{
+    width: 90%;
+}
+.purchases-title{
+    font-size: 1.7rem;
+}
+.purchises-articleContain{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.purchises-articleIndividaul{
+    width: 100%;
+    border-radius: 10px;
+    margin: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+.purchises-article-dataContain{
+    padding: 1rem;
+    border-bottom: 1px solid #bbb;
+}
+.purchises-article-data{
+
+}
+.purshise-article-descriptionContain{
+    padding: 1rem;
+    border-bottom: 1px solid #bbb;
+    display: flex;
+    justify-content: center;
+}
+.purshise-article-typeArticle{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+}
+.purshise-article-nameArticle{
+    
+}
+.purshise-article-cuantityContain{
+    width: 50px;
+    height: 30px;
+    border: 1px solid #b2b2b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.purshise-article-cuantity{
+    margin: 0;
+}
+.purshise-article-price{
+
+}

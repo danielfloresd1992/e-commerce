@@ -1,0 +1,111 @@
+.loginComponent{
+    padding-top: 100px;
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginContain{
+    width: 400px;
+    box-shadow: 2px 2px 5px #ababab;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+}
+.login-titleContains{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-h1Title{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.login-pTitle{
+    text-align: center;
+    color: #89bfed;
+    font-weight: 600;
+}
+.login-exapleContains{
+    background-color: #badfff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-pExaple{
+    margin: 5px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+.login-ulExaple{
+    margin: 0.2rem 0 0.5rem 0;
+    width: 100%;
+    list-style: none;
+    font-size: 1rem;
+}
+.login-liExaple{
+    display: flex;
+    align-items: center;
+}
+.login-liImg{
+    width: 25px;
+    margin-right: 0.5rem;
+    filter: opacity(0.5);
+}
+.login-formContains{
+    width: 100%;
+    padding-top: 2rem;
+}
+.login-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.login-label{
+    text-align: left;
+    width: 100%;
+}
+.login-div-password{
+    width: 100%;
+    display: flex;
+}
+.login-input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #c5c5c5;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    color: #6a6a6a;
+    margin-bottom: 0.5rem;
+}
+.input2{
+    width: 95%;
+}
+.login-div-password-button{
+    width: 5px;
+    background-color: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-div-password-img{
+    filter: opacity(0.5);
+    width: 30px;
+}
+.login-input:focus.login-input:focus-visible{
+    outline: unset;
+}
+.login-user{
+    width: 100%;
+    margin: 1rem 0 .5rem 0;
+}
+.login-registerContain{
+    text-align: center;
+}

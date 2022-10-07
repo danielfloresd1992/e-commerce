@@ -1,0 +1,170 @@
+.aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 1px rgb(94 94 94);
+    height: 100%;
+    width: 300px;
+    padding: 70px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    background-color: #fff;
+}
+.aside-boxContainer{
+    width: 100%;
+    transition: all 0.4s ease-out .10s;
+}
+.hidden{
+    height: 60px;
+    overflow: hidden;
+}
+.boxContainer_titleContains{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    border-bottom: solid 2px rgb(199, 199, 199);
+}
+.boxContainer_form-img {
+    width: 30px;
+    filter: opacity(0.5);
+}
+.aside-boxContainer_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+.boxContainer_form-tltle{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #787777;
+}
+.boxContainer_form-tltle:hover{
+    color: #000
+}
+.boxContainer_form-label{
+    width: 100%;   
+}
+.boxContainer_form-input{
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.2rem 0.5rem;
+    border: solid 1px #c1c1c1;
+    border-radius: 5px;
+    margin: 0 0 0.8rem 0;
+}
+.boxContainer_form-input:focus,.boxContainer_form-input:focus-visible{
+    outline:unset;
+}
+.boxContainer_form-btn{
+    width: 50%;
+    background-color: #ff5b4f;
+    margin: 0.8rem 0;
+    color: #fff;
+    font-weight: bold;
+    filter: brightness();
+    position: relative;
+    overflow: hidden;
+    border: none;
+    
+}
+.boxContainer_form-btn::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ff392b;
+    z-index: -1;
+    animation: btnEnd 1s ;
+    transition: all 1s step-start;
+    animation: btnStart 1s ;
+}
+.boxContainer_form-btn:hover::before{
+    width: 100%;
+    animation: btnEnd 1s ;
+    transition: all 1s step-start;
+}
+@keyframes btnStart {
+    0%{
+        width: 100%;
+    }
+   
+    100%{
+        width: 0%;
+    }
+}
+@keyframes btnEnd {
+    0%{
+        width: 0%;
+    }
+   
+    100%{
+        width: 100%;
+    }
+}
+.boxContainer_btnContains{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.btnContains-btn{
+    background-color: unset;
+    color: #787777;
+}
+
+
+@media screen and (max-width: 992px){
+    .aside{
+        transform: translateX(-300px);
+    }
+    .asideHidden{
+        padding: 100px 0 0 0;
+        transform: translateX(0);
+        height: 100%;
+        width: 80%;
+        position: fixed;
+        background-color: #fff;
+        z-index: 100;
+        bottom: 0;
+        box-shadow: 20px 2px 40px 2px rgb(50 50 50);
+    }
+    .ProductContains {
+        padding: 72px 0 0 0;
+    }
+    .ProductContains-products-intermediated{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sliler-hiden{
+        position: fixed;
+        top: 150px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: #ff7c62;
+        z-index: 20;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .sliler-hiden-img{
+        filter: invert();
+    }
+}

@@ -1,0 +1,136 @@
+.mainContent{
+    width: 100%;
+    height: 100%;
+}
+.ProductContains{
+    width: 100%;
+    min-height: 100%;
+    padding: 72px 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ProductContains-searhContains{
+    position: relative;
+    width: 90%;
+    margin-top: 1rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgb(175, 175, 175);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.ProductContains-products-intermediated{
+    min-height: 40vh;
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+.searhContains-input{
+    background-color: unset;
+    border: none;
+    width: 90%;
+    margin: 0;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+}
+.searhContains-input:focus,.searhContains-input:focus-visible{
+    outline: unset;
+}
+.searhContains-button{
+    position: absolute;
+    right: 0;
+    border: none;
+    border-radius: unset;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    background-color: #ff5b4f;
+    cursor: pointer;
+}
+.searhContains-button:hover{
+    background-color: #ff392b;
+}
+.searhContains-ico{
+   width: 30px;
+   filter: invert()
+}
+
+.ProductContains-products{
+    width: 90%;
+    height: 100%;
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+/*//////////////////////////////*/
+.products-load{              
+    position: absolute;
+    min-height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.products-word{
+    font-size: 2rem
+}
+/*//////////////////////////////*/
+.products{
+    position: relative;
+    width: 280px;
+    margin: 1rem;
+    border: 1px solid rgb(212, 212, 212);
+    box-shadow: 2px 2px 5px rgb(184 184 184);
+    border-radius: 5px;
+    background-color: #fff;
+}
+.products-imgContains{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    cursor: pointer;
+}
+.products-img{
+    height: 150px;
+}
+.products-data{
+    width: 100%;
+    padding: 1rem;
+}
+.products-title{
+    font-size: 1rem;
+    text-align: center;
+}
+.products-price{
+    margin: 0;
+}
+.products-car{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color:#ff5b4f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.products-car-img{
+    width: 24px;
+    filter: invert()
+}

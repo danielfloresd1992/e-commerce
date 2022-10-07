@@ -1,0 +1,50 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 4px #7c7c7c;
+    z-index: 200;
+    background-color: #ffff
+}
+.nav-ico{
+    
+}
+.nav-ico_title{
+    font-size: 2.2rem;
+    line-height: 1.1;
+    padding: .0 1em;
+    margin: 0;
+    color: #ff5050;
+    cursor: pointer
+}
+.nav-buttons{
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+}
+.nav-btn{
+    filter: opacity(0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 40px;
+    box-shadow: 0 0 1px;
+    cursor: pointer;
+    border: none;
+    background: unset;
+    border-radius: inherit;
+}
+.nav-btn_img{
+    width: 30px;
+}
+@media screen and (max-width: 992px){
+    .nav-ico_title{
+        font-size: 1rem;
+    }
+}

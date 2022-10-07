@@ -1,0 +1,63 @@
+.asideCard-component{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    padding: 80px .5rem 0 .5rem;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    border-right: 1px solid rgb(196, 196, 196) ;
+}
+.asideCard-title{
+    text-align: center;
+    margin-top: 0;
+    color: #ff5959;
+}
+.asideCart-ProductContain{
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+}
+.asideCart-product{
+    position: relative;
+    padding: 0 0.5rem 0.2rem;
+}
+.asideCart-brand{
+    color: chocolate;
+}
+.asideCart-title{
+    width: 80%;
+}
+.asideCart-cuantityContain{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    border: 1px solid #000;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.asideCart-cuantity{
+
+}
+.asideCart-btnDelect{
+    width: 50px;
+    right: 9.9px;
+    bottom: 0;
+    position: absolute;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.asideCart-btnImg{
+    width: 20px;
+    filter: invert(1);
+}
+.asideCart-btnBuy{
+    width: 100%;
+    border-radius: 0;
+}
