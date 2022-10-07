@@ -8,7 +8,7 @@ import  ProtectedRoutes  from './components/ProtetedRouters.jsx';
 import  Product  from './components/Product/Product';
 import Register from './components/Register/Register';
 import UserPerfil from './components/UserPerfil/UserPerfil';
-import Purchases from './components/Purchases/Purchases.jsx';
+import Purchases from './components/purchases/Purchases.jsx';
 import { useState } from 'react';
 import AsideCard from './components/AsideCard/AsideCard';
 
